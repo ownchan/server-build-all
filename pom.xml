@@ -34,12 +34,14 @@
     <mybatis.version>3.4.2</mybatis.version>
     <mybatis-ehcache.version>1.1.0</mybatis-ehcache.version>
     <mariadb-driver.version>1.5.9</mariadb-driver.version>
+    <image-scaling.version>0.8.6</image-scaling.version>
+    <cloud-vision.version>0.10.0-beta</cloud-vision.version>
   </properties>
 
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>org.ownchan.serve</groupId>
+        <groupId>org.ownchan.server</groupId>
         <artifactId>ownchan-server-ui-core</artifactId>
         <version>${project.version}</version>
       </dependency>
@@ -109,6 +111,16 @@
         <groupId>org.mybatis.spring.boot</groupId>
         <artifactId>mybatis-spring-boot-autoconfigure</artifactId>
         <version>${mybatis-spring-boot-autoconfig.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.mortennobel</groupId>
+        <artifactId>java-image-scaling</artifactId>
+        <version>${image-scaling.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.cloud</groupId>
+        <artifactId>google-cloud-vision</artifactId>
+        <version>${cloud-vision.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework.cloud</groupId>
