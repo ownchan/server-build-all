@@ -22,7 +22,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <resource.delimiter>@</resource.delimiter> <!-- delimiter that doesn't clash with Spring ${} placeholders -->
-    <commons-collections.version>3.2.2</commons-collections.version>
+    <commons-io.version>2.5</commons-io.version>
     <commons-collections4.version>4.0</commons-collections4.version>
     <commons-lang3.version>3.5</commons-lang3.version>
     <!-- Keep the feign-jackson version in sync with the feign-version from 
@@ -101,11 +101,6 @@
         <version>${mariadb-driver.version}</version>
       </dependency>
       <dependency>
-        <groupId>commons-collections</groupId>
-        <artifactId>commons-collections</artifactId>
-        <version>${commons-collections.version}</version>
-      </dependency>
-      <dependency>
         <groupId>org.quartz-scheduler</groupId>
         <artifactId>quartz</artifactId>
         <version>${quartz.version}</version>
@@ -162,6 +157,7 @@
     <module>../server-joint</module>
     <module>../server-ui-core</module>
     <module>../server-worker</module>
+    <module>../server-app</module>
   </modules>
 
   <build>
