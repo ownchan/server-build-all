@@ -35,7 +35,7 @@
     <mariadb-driver.version>1.5.9</mariadb-driver.version>
     <image-scaling.version>0.8.6</image-scaling.version>
     <cloud-vision.version>0.10.0-beta</cloud-vision.version>
-    <topology-suite.version>1.14</topology-suite.version>
+    <topology-suite.version>1.14.0</topology-suite.version>
   </properties>
 
   <dependencyManagement>
